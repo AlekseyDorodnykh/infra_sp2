@@ -34,6 +34,18 @@ cd infra
 docker-compose up -d --build
 ```
 
+В директории /infra создать файл .env с содержимым:
+
+
+```
+DB_ENGINE=django.db.backends.postgresql 
+DB_NAME=postgres # имя базы данных
+POSTGRES_USER=postgres # логин для подключения к базе данных
+POSTGRES_PASSWORD= # пароль для подключения к БД (установите свой)
+DB_HOST=db # название сервиса (контейнера)
+DB_PORT=5432 # порт для подключения к БД
+```
+
 Сделать миграции, суперпользователя и собрать статику:
 
 
