@@ -1,6 +1,3 @@
-# api_yamdb
-api_yamdb
-
 ## Описание
 Api_yamdb - проект, в котором пользователи могут делиться своими отзывами о произведениях при помощи API.
 
@@ -38,6 +35,7 @@ docker-compose up -d --build
 
 
 ```
+SECRET_KEY=default-key
 DB_ENGINE=django.db.backends.postgresql 
 DB_NAME=postgres # имя базы данных
 POSTGRES_USER=postgres # логин для подключения к базе данных
